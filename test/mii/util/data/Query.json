@@ -1,0 +1,4946 @@
+{
+	"d": {
+		"results": [{
+			"__metadata": {
+				"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Rowsets('SUMISA_TEST/services/GetErrorsQry')",
+				"type": "QueryTemplate.Rowsets"
+			},
+			"DateCreated": "\/Date(1506533807000)\/",
+			"EndDate": "\/Date(1506533807000)\/",
+			"StartDate": "\/Date(1506530207000)\/",
+			"Version": "14.0 SP7 Patch 15 (Jan 13, 2016)",
+			"QueryTemplate": "SUMISA_TEST/services/GetErrorsQry",
+			"Rowset": {
+				"results": [{
+					"__metadata": {
+						"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Rowset(QueryTemplate='SUMISA_TEST/services/GetErrorsQry',RowsetId=1)",
+						"type": "QueryTemplate.Rowset"
+					},
+					"RowsetId": 1,
+					"QueryTemplate": "SUMISA_TEST/services/GetErrorsQry",
+					"Column": {
+						"results": [{
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('FEHLER_ID')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "FEHLER_ID",
+							"Description": "FEHLER_ID",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 4,
+							"SourceColumn": "FEHLER_ID"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('FEHLER_CODE')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "FEHLER_CODE",
+							"Description": "FEHLER_CODE",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 12,
+							"SourceColumn": "FEHLER_CODE"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('FEHLER_TEXT')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "FEHLER_TEXT",
+							"Description": "FEHLER_TEXT",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 12,
+							"SourceColumn": "FEHLER_TEXT"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('FEHLER_STATUS')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "FEHLER_STATUS",
+							"Description": "FEHLER_STATUS",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 12,
+							"SourceColumn": "FEHLER_STATUS"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('MATNR')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "MATNR",
+							"Description": "MATNR",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 12,
+							"SourceColumn": "MATNR"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('PA_NBR')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "PA_NBR",
+							"Description": "PA_NBR",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 12,
+							"SourceColumn": "PA_NBR"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('PROCESS')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "PROCESS",
+							"Description": "PROCESS",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 12,
+							"SourceColumn": "PROCESS"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('VORNR')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "VORNR",
+							"Description": "VORNR",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 12,
+							"SourceColumn": "VORNR"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('ERSTELLT_AM')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "ERSTELLT_AM",
+							"Description": "ERSTELLT_AM",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 93,
+							"SourceColumn": "ERSTELLT_AM"
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Column('ERSTELLT_VON')",
+								"type": "QueryTemplate.Column"
+							},
+							"Name": "ERSTELLT_VON",
+							"Description": "ERSTELLT_VON",
+							"MaxRange": 1,
+							"MinRange": 0,
+							"SQLDataType": 12,
+							"SourceColumn": "ERSTELLT_VON"
+						}]
+					},
+					"Row": {
+						"results": [{
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(1)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2216,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1092694 - Nachbearbeitungssätze zum Auftrag 1092694 verhindern technischen Abschluss",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1092694",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994692000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 1
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(2)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2215,
+							"FEHLER_CODE": "0003",
+							"FEHLER_TEXT": "Für Material 1701807-110 LGORT SIF1 wurden keinen Chargen mit freiem Bestand gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1701807-110",
+							"PA_NBR": "1092694",
+							"PROCESS": "Materialbewegung: 261",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994302000)\/",
+							"ERSTELLT_VON": "rolahl01",
+							"RowId": 2
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(3)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2214,
+							"FEHLER_CODE": "0003",
+							"FEHLER_TEXT": "Der Auftrag 000001092694 hat keine Schüttgutkomponenten",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1701807-110",
+							"PA_NBR": "1092694",
+							"PROCESS": "Materialbewegung: 261",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994293000)\/",
+							"ERSTELLT_VON": "rolahl01",
+							"RowId": 3
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(4)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2213,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001092694 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1092694",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994277000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 4
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(5)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2212,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001092694 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1092694",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994155000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 5
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(6)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2211,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001093280 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093280",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994142000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 6
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(7)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2210,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001093280 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093280",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994072000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 7
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(8)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2209,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001093280 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093280",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994027000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 8
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(9)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2208,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001093280 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093280",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994008000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 9
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(10)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2207,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001093280 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093280",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1505994004000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 10
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(11)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2206,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1091753/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1091753",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0050",
+							"ERSTELLT_AM": "\/Date(1504625449000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 11
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(12)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2205,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1091753/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1091753",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0050",
+							"ERSTELLT_AM": "\/Date(1504625449000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 12
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(13)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2204,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001088174 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1088174",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1503953666000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 13
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(14)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2203,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1088174/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1088174",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1503945249000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 14
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(15)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2202,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1088174/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1088174",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1503945249000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 15
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(16)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2201,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1093243/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093243",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1502110810000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 16
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(17)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2200,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1093243/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093243",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1502110810000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 17
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(18)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2199,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1093242/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093242",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1502110587000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 18
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(19)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2198,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1093242/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093242",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1502110587000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 19
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(20)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2197,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1093240/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093240",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1502108453000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 20
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(21)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2196,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1093240/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1093240",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1502108453000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 21
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(22)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2195,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501176209000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 22
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(23)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2194,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175956000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 23
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(24)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2193,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175881000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 24
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(25)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2192,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175870000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 25
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(26)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2191,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175817000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 26
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(27)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2190,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175702000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 27
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(28)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2189,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175676000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 28
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(29)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2188,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175599000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 29
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(30)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2187,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175378000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 30
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(31)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2186,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501175331000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 31
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(32)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2185,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174996000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 32
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(33)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2184,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174986000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 33
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(34)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2183,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048235 - Fehler Auftrag 000001048235 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048235",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174982000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 34
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(35)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2182,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048235 - Fehler Auftrag 000001048235 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048235",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174923000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 35
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(36)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2181,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174114000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 36
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(37)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2180,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174075000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 37
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(38)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2179,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048235 - Fehler Auftrag 000001048235 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048235",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174063000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 38
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(39)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2178,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Warenbewegung konnte nicht angelegt werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048235",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174047000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 39
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(40)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2177,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Restlaufzeit (270 Tag) ist in der akt. Position um 139 Tage unterschritten",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048235",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501174047000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 40
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(41)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2176,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048235 - Fehler Auftrag 000001048235 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048235",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501173709000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 41
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(42)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2175,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048235 - Fehler Auftrag 000001048235 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048235",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501173701000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 42
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(43)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2174,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501173517000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 43
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(44)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2173,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501173500000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 44
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(45)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2172,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501173495000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 45
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(46)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2171,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048232 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501173272000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 46
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(47)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2170,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048234 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501173147000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 47
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(48)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2169,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048260 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048260",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1501173096000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 48
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(49)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2168,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048260/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048260",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1496156462000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 49
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(50)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2167,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048260/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048260",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1496156462000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 50
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(51)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2166,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048240 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048240",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1493305365000)\/",
+							"ERSTELLT_VON": "ROLAHL01",
+							"RowId": 51
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(52)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2165,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: 0210100   2017042715021048240        001000                                                                                    01 0         37229     0",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048240",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1493305338000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 52
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(53)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2164,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Datum in Cronetwork ungültig: AT=             ET=",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048240",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1493305338000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 53
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(54)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2163,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048235/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048235",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1481016921000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 54
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(55)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2162,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048235/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048235",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1481016921000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 55
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(56)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2161,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480614263000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 56
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(57)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2160,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480614194000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 57
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(58)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2159,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480614117000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 58
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(59)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2158,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048230 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048230",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480614095000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 59
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(60)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2157,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048230 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048230",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480614082000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 60
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(61)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2156,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048230 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048230",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480614065000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 61
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(62)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2155,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048230 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048230",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480614047000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 62
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(63)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2154,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480614015000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 63
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(64)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2153,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613993000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 64
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(65)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2152,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613978000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 65
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(66)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2151,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613929000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 66
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(67)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2150,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613920000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 67
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(68)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2149,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613913000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 68
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(69)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2148,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613893000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 69
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(70)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2147,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613846000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 70
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(71)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2146,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048231 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048231",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613698000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 71
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(72)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2145,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048231 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048231",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613686000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 72
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(73)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2144,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048231 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048231",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613676000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 73
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(74)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2143,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048232 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613670000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 74
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(75)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2142,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048232 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613659000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 75
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(76)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2141,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048232 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613651000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 76
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(77)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2140,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048232 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613638000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 77
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(78)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2139,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048231 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048231",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613628000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 78
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(79)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2138,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048232 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613606000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 79
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(80)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2137,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048232 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613580000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 80
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(81)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2136,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104822901 des Materials 1900180-312 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-312",
+							"PA_NBR": "1048229",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613163000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 81
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(82)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2135,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048234 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613161000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 82
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(83)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2134,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048229 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048229",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613138000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 83
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(84)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2133,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048229 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048229",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613126000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 84
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(85)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2132,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613122000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 85
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(86)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2131,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613116000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 86
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(87)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2130,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613105000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 87
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(88)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2129,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613098000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 88
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(89)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2128,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613089000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 89
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(90)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2127,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613073000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 90
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(91)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2126,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613058000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 91
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(92)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2125,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613041000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 92
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(93)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2124,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613035000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 93
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(94)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2123,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048224 - Fehler Auftrag 000001048224 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480613025000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 94
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(95)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2122,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048230 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048230",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612884000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 95
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(96)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2121,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048230 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048230",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612874000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 96
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(97)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2120,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048229 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048229",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612864000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 97
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(98)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2119,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612856000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 98
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(99)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2118,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048228 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612847000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 99
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(100)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2117,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612802000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 100
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(101)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2116,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612718000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 101
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(102)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2115,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612686000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 102
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(103)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2114,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612677000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 103
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(104)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2113,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048209 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612582000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 104
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(105)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2112,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048203 - Fehler Auftrag 000001048203 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612568000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 105
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(106)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2111,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048204 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048204",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612564000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 106
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(107)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2110,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048209 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612553000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 107
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(108)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2109,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048209 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612549000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 108
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(109)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2108,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048209 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612522000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 109
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(110)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2107,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048209 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612519000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 110
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(111)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2106,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048209 -",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480612514000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 111
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(112)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2105,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048186 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048186",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480599229000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 112
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(113)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2104,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048186 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048186",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480599219000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 113
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(114)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2103,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048213 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048213",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594580000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 114
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(115)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2102,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048213 ist abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048213",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480594553000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 115
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(116)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2101,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048213 ist abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048213",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480594548000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 116
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(117)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2100,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048213 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048213",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594520000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 117
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(118)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2099,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048215 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048215",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594517000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 118
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(119)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2098,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048215 wird bereits von DANHAR01 bearbeitet",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048215",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480594511000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 119
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(120)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2097,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048215 wird bereits von DANHAR01 bearbeitet",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048215",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480594506000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 120
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(121)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2096,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048215 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048215",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594493000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 121
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(122)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2095,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048214 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048214",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594489000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 122
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(123)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2094,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048214 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048214",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594473000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 123
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(124)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2093,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048212 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048212",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594457000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 124
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(125)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2092,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048212 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048212",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594436000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 125
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(126)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2091,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048211 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048211",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594434000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 126
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(127)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2090,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048211 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048211",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594414000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 127
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(128)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2089,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048211 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048211",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594403000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 128
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(129)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2088,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048210 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048210",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594401000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 129
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(130)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2087,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048210 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048210",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594382000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 130
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(131)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2086,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048209 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594378000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 131
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(132)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2085,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048209 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594359000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 132
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(133)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2084,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048208 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048208",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594356000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 133
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(134)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2083,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048208 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048208",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594335000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 134
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(135)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2082,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048207 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048207",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594331000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 135
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(136)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2081,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048207 wird bereits von DANHAR01 bearbeitet",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048207",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480594324000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 136
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(137)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2080,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048207 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048207",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594309000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 137
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(138)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2079,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048207 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048207",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594305000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 138
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(139)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2078,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048206 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048206",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594302000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 139
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(140)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2077,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048206 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048206",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594298000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 140
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(141)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2076,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048206 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048206",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594265000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 141
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(142)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2075,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048206 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048206",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594262000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 142
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(143)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2074,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048205 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048205",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594258000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 143
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(144)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2073,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048205 ist abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048205",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480594216000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 144
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(145)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2072,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048205 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048205",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594211000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 145
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(146)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2071,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048205 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048205",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594205000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 146
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(147)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2070,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048204 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048204",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594201000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 147
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(148)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2069,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048204 ist abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048204",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480594143000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 148
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(149)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2068,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048204 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048204",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594138000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 149
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(150)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2067,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048204 ist abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048204",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480594129000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 150
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(151)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2066,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048204 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048204",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594119000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 151
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(152)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2065,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048204 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048204",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480594114000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 152
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(153)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2064,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048191 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048191",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480593874000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 153
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(154)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2063,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048202 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480593763000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 154
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(155)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2062,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048234/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480589608000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 155
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(156)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2061,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048234/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048234",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480589608000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 156
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(157)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2060,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048232/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480589356000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 157
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(158)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2059,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048232/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048232",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480589356000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 158
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(159)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2058,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048231/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048231",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480589303000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 159
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(160)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2057,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048231/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048231",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480589303000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 160
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(161)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2056,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048230/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048230",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480588982000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 161
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(162)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2055,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048230/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048230",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480588982000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 162
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(163)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2054,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048229/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048229",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480502795000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 163
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(164)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2053,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048229/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048229",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480502795000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 164
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(165)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2052,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048228/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480502646000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 165
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(166)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2051,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048228/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048228",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480502646000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 166
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(167)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2050,
+							"FEHLER_CODE": "0003",
+							"FEHLER_TEXT": "Für Material 1100104-100 LGORT RB01 wurden keinen Chargen mit freiem Bestand gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1100104-100",
+							"PA_NBR": "1048227",
+							"PROCESS": "Materialbewegung: 261",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480448070000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 167
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(168)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2049,
+							"FEHLER_CODE": "0003",
+							"FEHLER_TEXT": "Für Material 1100104-100 LGORT RB01 wurden keinen Chargen mit freiem Bestand gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1100104-100",
+							"PA_NBR": "1048227",
+							"PROCESS": "Materialbewegung: 261",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447937000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 168
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(169)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2048,
+							"FEHLER_CODE": "0010",
+							"FEHLER_TEXT": "Zu Bestellung 4500022471 00001 ist kein Wareneingang möglich",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": null,
+							"PROCESS": "WE auf Bestellung",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447840000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 169
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(170)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2047,
+							"FEHLER_CODE": "0010",
+							"FEHLER_TEXT": "Zu Bestellung 4500022471 00001 ist kein Wareneingang möglich",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": null,
+							"PROCESS": "WE auf Bestellung",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447832000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 170
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(171)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2046,
+							"FEHLER_CODE": "0010",
+							"FEHLER_TEXT": "Zu Bestellung 4500022471 00001 ist kein Wareneingang möglich",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": null,
+							"PROCESS": "WE auf Bestellung",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447822000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 171
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(172)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2045,
+							"FEHLER_CODE": "0010",
+							"FEHLER_TEXT": "Zu Bestellung 4500022471 00001 ist kein Wareneingang möglich",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": null,
+							"PROCESS": "WE auf Bestellung",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447686000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 172
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(173)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2044,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048227 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048227",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447468000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 173
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(174)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2043,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048227 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048227",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447463000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 174
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(175)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2042,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048224 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447333000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 175
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(176)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2041,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048224 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447275000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 176
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(177)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2040,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048227 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048227",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447266000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 177
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(178)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2039,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048227 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048227",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447196000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 178
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(179)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2038,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048227/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048227",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480447189000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 179
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(180)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2037,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048227/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048227",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480447189000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 180
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(181)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2036,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048226 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048226",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480447080000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 181
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(182)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2035,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048226/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048226",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480447063000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 182
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(183)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2034,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048226/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048226",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480447063000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 183
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(184)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2033,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048225/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048225",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480446904000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 184
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(185)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2032,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048225/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048225",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480446904000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 185
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(186)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2031,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048224 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480446834000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 186
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(187)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2030,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048224 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480446820000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 187
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(188)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2029,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048224/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480446803000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 188
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(189)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2028,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048224/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048224",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480446803000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 189
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(190)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2027,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104822301 des Materials 1900180-001 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048223",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445459000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 190
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(191)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2026,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104822301 des Materials 1900180-001 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048223",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445363000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 191
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(192)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2025,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048223 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048223",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445298000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 192
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(193)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2024,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048223 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048223",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445296000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 193
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(194)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2023,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048223 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048223",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445266000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 194
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(195)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2022,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048222 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048222",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445257000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 195
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(196)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2021,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048222 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048222",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445240000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 196
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(197)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2020,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048222 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048222",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445231000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 197
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(198)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2019,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048222 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048222",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480445197000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 198
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(199)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2018,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444769000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 199
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(200)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2017,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444749000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 200
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(201)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2016,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444722000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 201
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(202)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2015,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444705000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 202
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(203)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2014,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444693000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 203
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(204)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2013,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444683000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 204
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(205)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2012,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104822101 des Materials 1900180-001 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444533000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 205
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(206)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2011,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104822101 des Materials 1900180-001 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444431000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 206
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(207)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2010,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444417000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 207
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(208)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2009,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104822101 des Materials 1900180-001 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444401000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 208
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(209)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2008,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444354000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 209
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(210)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2007,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444338000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 210
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(211)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2006,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444315000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 211
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(212)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2005,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Geben Sie Charge ein",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048221",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444288000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 212
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(213)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2004,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048221 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048221",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444263000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 213
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(214)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2003,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048221 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048221",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444242000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 214
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(215)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2002,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048191 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048191",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444232000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 215
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(216)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2001,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048191 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048191",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444218000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 216
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(217)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 2000,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048220 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048220",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444205000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 217
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(218)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1999,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048220 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048220",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480444175000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 218
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(219)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1998,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104821801 des Materials 1900180-001 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048218",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480443702000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 219
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(220)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1997,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104821801 des Materials 1900180-001 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048218",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480443638000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 220
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(221)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1996,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Retr.Buchung: BWART 261 mit Material 1701004-800 und Auftrag 1048218 fehlgeschlagen.",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048218",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480443042000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 221
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(222)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1995,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Auftrag 1048219 wird bereits von DANHAR01 bearbeitet",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048218",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480443042000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 222
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(223)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1994,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104821801 des Materials 1900180-001 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900180-001",
+							"PA_NBR": "1048218",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480442964000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 223
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(224)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1993,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048218 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048218",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480442625000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 224
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(225)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1992,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048218 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048218",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480442583000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 225
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(226)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1991,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048190 wird bereits von DANHAR01 bearbeitet",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900177-500",
+							"PA_NBR": "1048190",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480442558000)\/",
+							"ERSTELLT_VON": "danhar01",
+							"RowId": 226
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(227)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1990,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048190 - Fehler Auftrag 000001048190 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048190",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480442480000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 227
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(228)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1989,
+							"FEHLER_CODE": "0008",
+							"FEHLER_TEXT": "PA: 1048190 - Fehler Auftrag 000001048190 wurde nicht technisch abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048190",
+							"PROCESS": "PA abschliessen",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480442457000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 228
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(229)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1988,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048219 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048219",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480442367000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 229
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(230)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1987,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048219 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048219",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480442358000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 230
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(231)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1986,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048220 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048220",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480441936000)\/",
+							"ERSTELLT_VON": "DANHAR01",
+							"RowId": 231
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(232)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1985,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048223/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048223",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480084156000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 232
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(233)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1984,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048223/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048223",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480084156000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 233
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(234)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1983,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048222/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048222",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480084106000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 234
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(235)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1982,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048222/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048222",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480084106000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 235
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(236)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1981,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048221/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048221",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480083863000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 236
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(237)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1980,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048221/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048221",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480083863000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 237
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(238)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1979,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048220/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048220",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480083806000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 238
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(239)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1978,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048220/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048220",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480083806000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 239
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(240)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1977,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048218/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048218",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480083765000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 240
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(241)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1976,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048218/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048218",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480083765000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 241
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(242)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1975,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048219/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048219",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480083735000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 242
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(243)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1974,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048219/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048219",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0070",
+							"ERSTELLT_AM": "\/Date(1480083735000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 243
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(244)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1973,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104820301 des Materials 1900265-303 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048203",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480001644000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 244
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(245)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1972,
+							"FEHLER_CODE": "0002",
+							"FEHLER_TEXT": "Charge 0104820301 des Materials 1900265-303 bereits durch SUW_MII gesperrt",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048203",
+							"PROCESS": "Materialbewegung: 101",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480001595000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 245
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(246)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1971,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048203 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480001518000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 246
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(247)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1970,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048203 ist abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048203",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480001481000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 247
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(248)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1969,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048203 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480001061000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 248
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(249)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1968,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048202 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480001026000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 249
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(250)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1967,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048202 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480000839000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 250
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(251)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1966,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048202 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480000838000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 251
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(252)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1965,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048202 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480000768000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 252
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(253)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1964,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048202 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1480000633000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 253
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(254)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1963,
+							"FEHLER_CODE": "0007",
+							"FEHLER_TEXT": "Auftrag 1048202 ist abgeschlossen",
+							"FEHLER_STATUS": "neu",
+							"MATNR": "1900265-303",
+							"PA_NBR": "1048202",
+							"PROCESS": "Phase Start",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1480000579000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 254
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(255)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1962,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048202 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1479999908000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 255
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(256)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1961,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048215/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048215",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1478162252000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 256
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(257)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1960,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048215/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048215",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1478162252000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 257
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(258)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1959,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048214/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048214",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1478161911000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 258
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(259)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1958,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048214/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048214",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1478161911000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 259
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(260)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1957,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048213/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048213",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1478081286000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 260
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(261)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1956,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048213/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048213",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1478081286000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 261
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(262)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1955,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048212/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048212",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1478078706000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 262
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(263)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1954,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048212/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048212",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1478078706000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 263
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(264)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1953,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048211/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048211",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477993893000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 264
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(265)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1952,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048211/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048211",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477993893000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 265
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(266)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1951,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048210/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048210",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477993710000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 266
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(267)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1950,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048210/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048210",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477993710000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 267
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(268)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1949,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048209/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477488772000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 268
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(269)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1948,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048209/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048209",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477488772000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 269
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(270)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1947,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048208/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048208",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477417159000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 270
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(271)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1946,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048208/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048208",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477417159000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 271
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(272)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1945,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: 0210100   2016102517321048207        001000                                                                                    01 0         175095    0",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048207",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477416739000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 272
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(273)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1944,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Datum in Cronetwork ungültig: AT=             ET=",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048207",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1477416739000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 273
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(274)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1943,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048206/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048206",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476434791000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 274
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(275)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1942,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048206/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048206",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476434791000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 275
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(276)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1941,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048205/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048205",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476364182000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 276
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(277)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1940,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048205/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048205",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476364182000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 277
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(278)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1939,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048205/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048205",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476364068000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 278
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(279)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1938,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048205/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048205",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476364068000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 279
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(280)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1937,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048204/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048204",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476363201000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 280
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(281)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1936,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048204/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048204",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476363201000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 281
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(282)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1935,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: 0210100   2016101312431048203        001000                                                                                    11 0         210634    0",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476362618000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 282
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(283)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1934,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Datum in Cronetwork ungültig: AT=             ET=",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476362618000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 283
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(284)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1933,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: 0210100   2016101311571048203        001000                                                                                    11 0         210634    0",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476359872000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 284
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(285)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1932,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Datum in Cronetwork ungültig: AT=             ET=",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476359872000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 285
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(286)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1931,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: WebSrvErr: 1 - Arbeitsgang: 1048203/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476359642000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 286
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(287)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1930,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Webservice hat einen Fehler zurückgeben: WebSrvErr: 1 - Arbeitsgang: 1048203/0010/00 existiert nicht!\nORA-01403: Keine Daten gefunden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048203",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476359642000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 287
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(288)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1929,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: 0210100   2016101311441048202        001000                                                                                    11 0         210634    0",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476359096000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 288
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(289)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1928,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Datum in Cronetwork ungültig: AT=             ET=",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476359096000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 289
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(290)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1927,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "CNW WEBSRV: 0210100   2016101210561048202        001000                                                                                    01 0         210634    0",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476269791000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 290
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(291)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1926,
+							"FEHLER_CODE": "0012",
+							"FEHLER_TEXT": "Datum in Cronetwork ungültig: AT=             ET=",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048202",
+							"PROCESS": "Terminabgleich Cronetwork",
+							"VORNR": "0010",
+							"ERSTELLT_AM": "\/Date(1476269791000)\/",
+							"ERSTELLT_VON": "SYSTEM",
+							"RowId": 291
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(292)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1925,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001048181 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1048181",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575988000)\/",
+							"ERSTELLT_VON": "PHIGEM",
+							"RowId": 292
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(293)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1924,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001049999 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1049999",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575802000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 293
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(294)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1923,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001049999 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1049999",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575744000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 294
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(295)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1922,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001049999 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1049999",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575503000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 295
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(296)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1921,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001049999 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1049999",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575429000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 296
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(297)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1920,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001049999 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1049999",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575402000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 297
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(298)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1919,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001049999 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1049999",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575249000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 298
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(299)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1918,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001049999 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1049999",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575246000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 299
+						}, {
+							"__metadata": {
+								"uri": "http://su-mii-dev01.intern.suwelack.de:50000/XMII/IlluminatorOData/Row(300)",
+								"type": "QueryTemplate.Row"
+							},
+							"FEHLER_ID": 1917,
+							"FEHLER_CODE": "0013",
+							"FEHLER_TEXT": "Für Auftrag 000001049999 konnten keine Warenbewegungen gefunden werden",
+							"FEHLER_STATUS": "neu",
+							"MATNR": null,
+							"PA_NBR": "1049999",
+							"PROCESS": "Abgleich Buchungsmengen SAP ERP",
+							"VORNR": null,
+							"ERSTELLT_AM": "\/Date(1468575212000)\/",
+							"ERSTELLT_VON": "phigem",
+							"RowId": 300
+						}]
+					}
+				}]
+			},
+			"Messages": {
+				"results": [
+
+				]
+			}
+		}]
+	}
+}
