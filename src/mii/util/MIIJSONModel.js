@@ -47,7 +47,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 			
 			if (sUrl && typeof sUrl === "string" && oURLParameters) {
 				
-				JSONModel.load(sUrl, oURLParameters, bAsync, sType, bMerge, bCache, mHeaders);
+				JSONModel.loadData(sUrl, oURLParameters, bAsync, sType, bMerge, bCache, mHeaders);
 
 			} else {
 				jQuery.sap.log.warning("Method loadData() is missing oURLParameters. Data not loaded.", null, this.toString());

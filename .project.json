@@ -17,5 +17,10 @@
     "defaultLanguage": "de",
     "defaultI18NPropertyFile": "",
     "resourceModelName": ""
+  },
+  "hcpdeploy": {
+    "account": "p1942861385trial",
+    "name": "miiutil",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }
