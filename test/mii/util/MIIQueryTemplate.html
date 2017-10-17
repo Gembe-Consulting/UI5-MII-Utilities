@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>MII Utility MIIQueryTemplate - mii.util.MIIQueryTemplate</title>
+
+	<script id="sap-ui-bootstrap"
+			src="/resources/sap-ui-core.js"
+			data-sap-ui-libs="mii.util"
+			data-sap-ui-theme="sap_bluecrystal" >
+	</script>
+
+	<script>
+	
+			var oCore = sap.ui.getCore();
+			
+			try{
+				oCore.loadLibrary("mii.util");
+			}catch(e){
+				alert("This test page requires the library 'mii.util' which is not available.");
+				throw(e);
+			}
+			
+			oCore.attachInitEvent(function () {
+				var oIlluminatorObj = new mii.util.RowsetsObject();
+				
+				var oJSONData = jQuery.sap.syncGetJSON("./data/Query.json");
+				
+				oIlluminatorObj.setMiiData(oJSONData);
+				
+			});
+
+	</script>
+</head>
+<body class="sapUiBody" role="application">
+
+	<h1>Test Page for <code>mii.util.MIIQueryTemplate</code></h1>
+	<div id="target0"></div>
+</body>
+</html>
