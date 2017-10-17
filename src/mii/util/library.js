@@ -8,6 +8,7 @@
  *	sap.ui.define(["sap/ui/core/library"], function(library) {
  *		var sAlign = library.HorizontalAlign.Begin;
  *	});
+ * 
  */
 
 sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
