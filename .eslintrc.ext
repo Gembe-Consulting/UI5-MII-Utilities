@@ -366,7 +366,7 @@
 			"helpUrl": "http://eslint.org/docs/rules/no-restricted-modules"
 		},
 		"no-alert": {
-			"severity": "error",
+			"severity": "warning",
 			"category": "Best Practices",
 			"helpUrl": "http://eslint.org/docs/rules/no-alert"
 		},
