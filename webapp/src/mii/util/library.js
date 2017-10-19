@@ -9,8 +9,7 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 		name: "mii.util",
 		version: "0.1.3",
 		dependencies: [
-			"sap.ui.core",
-			"sap.ui.base"
+			"sap.ui.core"
 		],
 		types: [
 			"mii.util.QueryTemplateType",
