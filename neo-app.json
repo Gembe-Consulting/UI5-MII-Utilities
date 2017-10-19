@@ -1,49 +1,43 @@
 {
-  "routes": [
-    {
-      "path": "/webapp/resources",
-      "target": {
-        "type": "service",
-        "name": "sapui5",
-        "entryPath": "/resources"
-      },
-      "description": "SAPUI5 Resources"
-    },
-    {
-      "path": "/webapp/test-resources",
-      "target": {
-        "type": "service",
-        "name": "sapui5",
-        "entryPath": "/test-resources"
-      },
-      "description": "SAPUI5 Test Resources"
-    },
-    {
-      "path": "/resources",
-      "target": {
-        "type": "service",
-        "name": "sapui5",
-        "entryPath": "/resources"
-      },
-      "description": "SAPUI5 Resources"
-    },
-    {
-      "path": "/test-resources",
-      "target": {
-        "type": "service",
-        "name": "sapui5",
-        "entryPath": "/test-resources"
-      },
-      "description": "SAPUI5 Test Resources"
-    },
-    {
-      "path": "/resources/mii/util",
-      "target": {
-        "type": "application",
-        "name": "ui5miiutilities",
-        "entryPath": "/mii/util/"
-      },
-      "description": "MII utility library"
-    }
-  ]
+	"routes": [{
+		"path": "/resources/mii/util",
+		"target": {
+			"type": "application",
+			"name": "miiutil",
+			"entryPath": "/src/mii/util/"
+		},
+		"description": "MII utility library"
+	}, {
+		"path": "/webapp/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/webapp/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}, {
+		"path": "/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}]
 }

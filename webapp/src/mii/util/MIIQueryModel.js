@@ -22,7 +22,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 		 * @param {object} oURLParameters
 		 * @public
 		 */
-		var MIIQueryModel = JSONModel.extend("com.mii.scanner.controller.MIIQueryModel", /** @lendscom.mii.scanner.controller.MIIQueryModel.prototype */ {
+		var MIIQueryModel = JSONModel.extend("mii.util.MIIQueryModel", /** @lends mii.util.MIIQueryModel.prototype */ {
 			constructor: function(sUrl, oURLParameters) {
 				if (!sUrl || typeof sUrl !== "string") {
 					jQuery.sap.log.error("Parameter sUrl must be type of string", null, this.toString());

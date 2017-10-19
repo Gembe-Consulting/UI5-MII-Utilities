@@ -7,24 +7,25 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 	 */
 	sap.ui.getCore().initLibrary({
 		name: "mii.util",
-		version: "0.1.3",
+		version: "0.1.7",
 		dependencies: [
 			"sap.ui.core"
 		],
 		types: [
-			"mii.util.QueryTemplateType",
-			"mii.util.RowsetsObject",
+			"mii.util.QueryTemplateType"
+		],
+		interfaces: [],
+		controls: [
 			"mii.util.MIIQueryModel",
+			
 			"mii.util.MIIQueryTemplate",
+			"mii.util.RowsetsObject",
+	
 			"mii.util.type.illuminator.Rowset",
 			"mii.util.type.illuminator.Column",
 			"mii.util.type.illuminator.Row",
 			"mii.util.type.illuminator.Message",
 			"mii.util.type.illuminator.FatalError"
-		],
-		interfaces: [],
-		controls: [
-
 		],
 		elements: [],
 		noLibraryCSS: true
