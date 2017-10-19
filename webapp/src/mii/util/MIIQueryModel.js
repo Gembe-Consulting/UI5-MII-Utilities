@@ -28,9 +28,10 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 					jQuery.sap.log.error("Parameter sUrl must be type of string", null, this.toString());
 					return;
 				}
-				JSONModel.apply(this, arguments);
 				
 				this._sUrl = sUrl;
+				
+				JSONModel.apply(this, arguments);
 			},
 
 			metadata: {
@@ -45,7 +46,9 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 		 */
 		MIIQueryModel.prototype.loadData = function(sUrl, oURLParameters, bAsync, sType, bMerge, bCache, mHeaders) {
 			
-			if (sUrl && typeof sUrl === "string" && oURLParameters) {
+			sUrl = sUrl || this._sUrl;
+			
+			if ((typeof sUrl === "string") && oURLParameters) {
 			
 				JSONModel.prototype.loadData.apply(this, [sUrl, oURLParameters, bAsync, sType, bMerge, bCache, mHeaders]);
 
