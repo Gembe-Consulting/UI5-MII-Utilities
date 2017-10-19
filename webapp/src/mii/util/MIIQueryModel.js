@@ -22,14 +22,14 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 		 * @param {object} oURLParameters
 		 * @public
 		 */
-		var MIIJSONModel = JSONModel.extend("mii.util.MIIJSONModel", /** @lends mii.util.MIIJSONModel.prototype */ {
+		var MIIQueryModel = JSONModel.extend("com.mii.scanner.controller.MIIQueryModel", /** @lendscom.mii.scanner.controller.MIIQueryModel.prototype */ {
 			constructor: function(sUrl, oURLParameters) {
 				if (!sUrl || typeof sUrl !== "string") {
 					jQuery.sap.log.error("Parameter sUrl must be type of string", null, this.toString());
 					return;
 				}
 				JSONModel.apply(this, arguments);
-
+				
 				this._sUrl = sUrl;
 			},
 
@@ -43,18 +43,18 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 		 * This is to ensure having proper input data for MII QueryTemplate
 		 * @public
 		 */
-		MIIJSONModel.prototype.loadData = function(sUrl, oURLParameters, bAsync, sType, bMerge, bCache, mHeaders) {
-
+		MIIQueryModel.prototype.loadData = function(sUrl, oURLParameters, bAsync, sType, bMerge, bCache, mHeaders) {
+			
 			if (sUrl && typeof sUrl === "string" && oURLParameters) {
-
-				JSONModel.loadData(sUrl, oURLParameters, bAsync, sType, bMerge, bCache, mHeaders);
+			
+				JSONModel.prototype.loadData.apply(this, [sUrl, oURLParameters, bAsync, sType, bMerge, bCache, mHeaders]);
 
 			} else {
 				jQuery.sap.log.warning("Method loadData() is missing oURLParameters. Data not loaded.", null, this.toString());
 			}
 
 		};
-
-		return MIIJSONModel;
+		
+		return MIIQueryModel;
 
 	});

@@ -14,7 +14,7 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 		types: [
 			"mii.util.QueryTemplateType",
 			"mii.util.RowsetsObject",
-			"mii.util.MIIJSONModel",
+			"mii.util.MIIQueryModel",
 			"mii.util.MIIQueryTemplate",
 			"mii.util.type.illuminator.Rowset",
 			"mii.util.type.illuminator.Column",

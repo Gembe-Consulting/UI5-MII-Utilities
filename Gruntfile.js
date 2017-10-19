@@ -1,10 +1,9 @@
 module.exports = function(grunt) {
 	"use strict";
-	grunt.loadNpmTasks("grunt-eslint");	
+	grunt.loadNpmTasks("grunt-eslint");
 	grunt.loadNpmTasks("grunt-contrib-clean");
 	grunt.loadNpmTasks("grunt-contrib-copy");
 	grunt.loadNpmTasks("grunt-openui5");
-	
 
 	grunt.initConfig({
 		dir: {
@@ -12,17 +11,22 @@ module.exports = function(grunt) {
 			dist: "dist"
 		},
 		clean: {
-			dist: "<%= dir.dist %>"
+			options: {
+				force: true
+			},
+			dist: [
+				"<%= dir.dist %>/**"
+			]
 		},
 		openui5_preload: {
 			library: {
-			  options: {
-			    resources: { 
-			    	cwd: "<%= dir.source %>"
-			    },
-			    dest: "<%= dir.dist %>"
-			  },
-			  libraries: true
+				options: {
+					resources: {
+						cwd: "<%= dir.source %>"
+					},
+					dest: "<%= dir.dist %>"
+				},
+				libraries: true
 			}
 		},
 		copy: {
@@ -41,26 +45,26 @@ module.exports = function(grunt) {
 			webapp: ["<%= dir.source %>"]
 		}
 	});
-	
+
 	// Linting task
 	grunt.registerTask("cleanup", [
 		"clean"
 	]);
-	
+
 	// Linting task
 	grunt.registerTask("lint", [
 		"eslint"
 	]);
-	
+
 	// Build task
 	grunt.registerTask("build", [
-		"openui5_preload", 
+		"openui5_preload",
 		"copy"
 	]);
 
 	grunt.registerTask("default", [
 		//"lint",
-		"cleanup"
-		,"build"
+		"cleanup",
+		"build"
 	]);
 };
