@@ -10,12 +10,17 @@
 	<script id="sap-ui-bootstrap"
 			src="/resources/sap-ui-core.js"
 			data-sap-ui-libs="mii.util"
-			data-sap-ui-theme="sap_bluecrystal" >
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-resourceroots='{
+				"mii.util": "/webapp/src/mii/util"
+			}'>
 	</script>
 
 	<script>
 	
 			var oCore = sap.ui.getCore();
+			
+			jQuery.sap.registerResourcePath
 			
 			try{
 				oCore.loadLibrary("mii.util");
@@ -25,14 +30,25 @@
 			}
 			
 			oCore.attachInitEvent(function () {
-				var oIlluminatorObj = new mii.util.RowsetsObject();
 				
-				var oJSONData = jQuery.sap.syncGetJSON("./data/Query.json");
+				sap.ui.require([
+					"mii/util/model/illum/QueryTemplateModel"
+				], function (QueryTemplateModel) {
+
 				
-				oIlluminatorObj.setMiiData(oJSONData);
+				// var oIlluminatorObj = new mii.util.RowsetsObject();
+				// var oJSONData = jQuery.sap.syncGetJSON("./data/Query.json");
+				// oIlluminatorObj.setMiiData(oJSONData);
 				
-				var oModel = new mii.util.MIIQueryModel("test.html");
+				var oParams = {
+					"Param.1": "test",
+					"StartDate":"start date",
+					"EndDate":"end date"
+				};
 				
+				var oModel = new QueryTemplateModel("XYZ/foo/bar/Query", oParams);
+				oModel.loadMiiData();
+				});
 			});
 
 	</script>

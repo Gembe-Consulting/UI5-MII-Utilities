@@ -16,20 +16,15 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 		],
 		interfaces: [],
 		controls: [
-			"mii.util.MIIQueryModel",
-			
-			"mii.util.MIIQueryTemplate",
-			"mii.util.RowsetsObject",
-	
-			"mii.util.type.illuminator.Rowset",
-			"mii.util.type.illuminator.Column",
-			"mii.util.type.illuminator.Row",
-			"mii.util.type.illuminator.Message",
-			"mii.util.type.illuminator.FatalError"
+			"mii.util.type.Rowset"
+			],
+		elements: [
+			"mii.util.model.illum.QueryTemplateModel"
 		],
-		elements: [],
 		noLibraryCSS: true
 	});
+
+	var thisLib = mii.util;
 
 	/**
 	 * An addition to mii.util. If you used the @alias tag above, JSDoc will recognize this as mii.util.QueryTemplateType.
@@ -37,7 +32,7 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 	 *         mii/util/QueryTemplateType.type. 
 	 * The name of the variable (<code>oMIIUtil</code>) is not mandatory.
 	 */
-	mii.util.QueryTemplateType = {
+	thisLib.QueryTemplateType = {
 		AggregateQuery: "AggregateQuery",
 		AlarmQuery: "AlarmQuery",
 		OLAPQuery: "OLAPQuery",
@@ -51,7 +46,7 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 		CatalogQuery: "CatalogQuery"
 	};
 
-	mii.util.operationMode = {
+	thisLib.operationMode = {
 		Create: "INSERT",
 		Read: "SELECT",
 		Update: "UPDATE",
@@ -59,6 +54,6 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 	};
 
 	// don’t forget to return the value
-	return mii.util;
+	return thisLib;
 
 });
