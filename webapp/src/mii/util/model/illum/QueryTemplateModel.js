@@ -52,9 +52,11 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 				return;
 			};
 			
-			if (oParameters || this.oParameters) {
+			var oUrlParams = this.oParameters || oParameters;
+			
+			if (oUrlParams) {
 
-				this.loadMiiData(sUrl, oParameters, bAsync, sType, bMerge, bCache);
+				this.loadMiiData(sUrl, oUrlParams, bAsync, sType, bMerge, bCache);
 				//JSONModel.prototype.loadData.apply(this, [sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders]);
 
 			} else {
