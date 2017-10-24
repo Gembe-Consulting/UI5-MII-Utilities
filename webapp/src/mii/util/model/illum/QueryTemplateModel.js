@@ -67,7 +67,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 		QueryTemplateModel.prototype.loadMiiData = function(sMiiQueryTemplatePath, oMiiQueryTemplateParams, bAsync, sType, bMerge, bCache) {
 
-			var sBaseUrl = this.getIllumBaseUrl(),
+			var sServiceUrl = this.getIllumServiceUrl(),
 				bAsync = (bAsync !== false), // false if flase, true in all other cases (null, undefined, 1, "X", ...)
 				bMerge = (bMerge === true), // true if true, false in all other cases
 				sType = sType === "POST" ? sType : "GET", // only allow GET (defaut) and POST
@@ -84,7 +84,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 				}
 				this.setData(oData, bMerge);
 				this.fireRequestCompleted({
-					url: sBaseUrl,
+					url: sServiceUrl,
 					type: sType,
 					async: bAsync,
 					info: "cache=" + bCache + ";bMerge=" + bMerge,
@@ -103,11 +103,11 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 					statusText: oParams.request ? oParams.request.statusText : oParams.statusText,
 					responseText: oParams.request ? oParams.request.responseText : oParams.responseText
 				};
-				jQuery.sap.log.fatal("The following problem occurred: " + oParams.textStatus, oParams.request.responseText + "," + oParams.request.status +
-					"," + oParams.request.statusText);
+				jQuery.sap.log.fatal("The following problem occurred: " + oError.statusText, oError.responseText + "," + oError.statusCode +
+					"," + oError.message);
 
 				this.fireRequestCompleted({
-					url: sBaseUrl,
+					url: sServiceUrl,
 					type: sType,
 					async: bAsync,
 					info: "cache=" + bCache + ";bMerge=" + bMerge,
@@ -123,7 +123,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 			var _loadData = function(fnSuccess, fnError) {
 				this._ajax({
-					url: sBaseUrl,
+					url: sServiceUrl,
 					async: bAsync,
 					dataType: 'json',
 					cache: bCache,
@@ -166,9 +166,9 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 			return true;
 		};
 
-		QueryTemplateModel.prototype.getIllumBaseUrl = function(sIllumServiceName) {
+		QueryTemplateModel.prototype.getIllumServiceUrl = function(sIllumServiceName) {
 			sIllumServiceName = sIllumServiceName || "QueryTemplate";
-			return "/XMII/Illuminator/" + sIllumServiceName;
+			return this._sBaseUrl + sIllumServiceName;
 		};
 
 		return QueryTemplateModel;
