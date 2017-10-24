@@ -98,10 +98,10 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 			var fnError = function(oParams) {
 				var oError = {
-					message: oParams.textStatus,
-					statusCode: oParams.request.status,
-					statusText: oParams.request.statusText,
-					responseText: oParams.request.responseText
+					message: oParams.textStatus || oParams.statusText,
+					statusCode: oParams.request.status || oParams.status,
+					statusText: oParams.request.statusText || oParams.statusText,
+					responseText: oParams.request.responseText || oParams.responseText
 				};
 				jQuery.sap.log.fatal("The following problem occurred: " + oParams.textStatus, oParams.request.responseText + "," + oParams.request.status +
 					"," + oParams.request.statusText);

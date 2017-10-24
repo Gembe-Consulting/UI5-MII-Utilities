@@ -1,9 +1,10 @@
 /**
- * MII QueryTemplate
- * 
+ * MII Illuminator Class - Document
+ * https://openui5.hana.ondemand.com/#/api/sap.ui.base.ManagedObject/methods/sap.ui.base.ManagedObject.extend
  */
 
-// Provides an abstract base implementation for MII QueryTemplate
+// Provides an abstract base implementation for MII Document
+// The Rowsets element is created, but its children are not. 
 sap.ui.define(["jquery.sap.global", "./library", "sap/ui/base/Object"], function(jQuery, library, BaseObject) {
 	"use strict";
 
