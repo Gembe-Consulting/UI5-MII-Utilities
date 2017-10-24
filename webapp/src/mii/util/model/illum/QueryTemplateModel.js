@@ -24,17 +24,17 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 		 */
 		var QueryTemplateModel = JSONModel.extend("mii.util.model.illum.QueryTemplateModel", /** @lends mii.util.model.illum.QueryTemplateModel.prototype */ {
 			constructor: function(oData, oParameters) {
-			
-				if(oParameters){
-					this.bPreventInitialLoad = 	oParameters.preventInitialLoad || false;	//true, false, null (if it was true)
+
+				if (oParameters) {
+					this.bPreventInitialLoad = oParameters.preventInitialLoad || false; //true, false, null (if it was true)
 				}
-				
+
 				if (typeof oData == "string") {
 					this._sServiceUrl = oData;
 				}
-				
+
 				JSONModel.apply(this, arguments);
-				
+
 			}
 		});
 
@@ -44,24 +44,23 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 		 * @public
 		 */
 		QueryTemplateModel.prototype.loadData = function(sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders) {
-			
-			if(!this._sServiceUrl){
+
+			if (!this._sServiceUrl) {
 				this._sServiceUrl = sUrl;
 			}
-			
-			if(this.bPreventInitialLoad){
+
+			if (this.bPreventInitialLoad) {
 				this.bPreventInitialLoad = null;
 				return;
 			};
-			
-			if (sUrl && oParameters) {
 
-				this.loadMiiData(sUrl, oParameters, bAsync, sType, bMerge, bCache);
-				//JSONModel.prototype.loadData.apply(this, [sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders]);
-
-			} else {
+			if (!sUrl || !oParameters) {
 				jQuery.sap.log.warning("Method loadData() is missing either sUrl or oParameters. Data not loaded.", null, this.toString());
+
+				return;
 			}
+			return this.loadMiiData(sUrl, oParameters, bAsync, sType, bMerge, bCache);
+			//JSONModel.prototype.loadData.apply(this, [sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders]);
 
 		};
 
@@ -156,12 +155,16 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 		};
 
 		QueryTemplateModel.prototype.buildIllumParamList = function(oMiiQueryTemplateParams) {
+
+			// hier werden wir notwendige mappings durchführen
+
 			this._validateMiiParameters();
 
 			return oMiiQueryTemplateParams;
 
 		};
 		QueryTemplateModel.prototype._validateMiiParameters = function(oMiiQueryTemplateParams) {
+			// hier werdn wir die Params gegen ein Schema vergleichen
 			return true;
 		};
 
