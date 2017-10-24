@@ -24,15 +24,13 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 		 */
 		var QueryTemplateModel = JSONModel.extend("mii.util.model.illum.QueryTemplateModel", /** @lends mii.util.model.illum.QueryTemplateModel.prototype */ {
 			constructor: function(oData, oParameters) {
-				
-				this.oParameters = oParameters;
-				
-				if(this.oParameters){
-					this.bPreventInitialLoad = 	this.oParameters.preventInitialLoad || false;	//true, false, null (if it was true)
+			
+				if(oParameters){
+					this.bPreventInitialLoad = 	oParameters.preventInitialLoad || false;	//true, false, null (if it was true)
 				}
 				
 				if (typeof oData == "string") {
-					this._sBaseUrl = oData;
+					this._sServiceUrl = oData;
 				}
 				
 				JSONModel.apply(this, arguments);
@@ -47,16 +45,18 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 		 */
 		QueryTemplateModel.prototype.loadData = function(sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders) {
 			
+			if(!this._sServiceUrl){
+				this._sServiceUrl = sUrl;
+			}
+			
 			if(this.bPreventInitialLoad){
 				this.bPreventInitialLoad = null;
 				return;
 			};
 			
-			var oUrlParams = this.oParameters || oParameters;
-			
-			if (oUrlParams) {
+			if (sUrl && oParameters) {
 
-				this.loadMiiData(sUrl, oUrlParams, bAsync, sType, bMerge, bCache);
+				this.loadMiiData(sUrl, oParameters, bAsync, sType, bMerge, bCache);
 				//JSONModel.prototype.loadData.apply(this, [sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders]);
 
 			} else {
@@ -65,26 +65,25 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 		};
 
-		QueryTemplateModel.prototype.loadMiiData = function(sMiiQueryTemplatePath, oMiiQueryTemplateParams, bAsync, sType, bMerge, bCache) {
+		QueryTemplateModel.prototype.loadMiiData = function(sUrl, oParameters, bAsync, sType, bMerge, bCache) {
 
-			var sServiceUrl = this.getIllumServiceUrl(),
-				bAsync = (bAsync !== false), // false if flase, true in all other cases (null, undefined, 1, "X", ...)
+			var bAsync = (bAsync !== false), // false if flase, true in all other cases (null, undefined, 1, "X", ...)
 				bMerge = (bMerge === true), // true if true, false in all other cases
 				sType = sType === "POST" ? sType : "GET", // only allow GET (defaut) and POST
 				bCache = (bCache === true), // true if true, false in all other cases
-				oMiiQueryTemplateParams = oMiiQueryTemplateParams || this.oMiiServiceParameters,
 				pImportCompleted,
-				oURLParameters;
+				sMiiQueryServiceUrl = sUrl,
+				oMiiQueryParameters;
 
-			oURLParameters = this.buildIllumParamList(oMiiQueryTemplateParams);
+			oMiiQueryParameters = this.buildIllumParamList(oParameters);
 
 			var fnSuccess = function(oData) {
 				if (!oData) {
-					jQuery.sap.log.fatal("The following problem occurred: No data was retrieved by MII service: " + sMiiQueryTemplatePath);
+					jQuery.sap.log.fatal("The following problem occurred: No data was retrieved by MII service: " + sMiiQueryServiceUrl);
 				}
 				this.setData(oData, bMerge);
 				this.fireRequestCompleted({
-					url: sServiceUrl,
+					url: sMiiQueryServiceUrl,
 					type: sType,
 					async: bAsync,
 					info: "cache=" + bCache + ";bMerge=" + bMerge,
@@ -107,7 +106,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 					"," + oError.message);
 
 				this.fireRequestCompleted({
-					url: sServiceUrl,
+					url: sMiiQueryServiceUrl,
 					type: sType,
 					async: bAsync,
 					info: "cache=" + bCache + ";bMerge=" + bMerge,
@@ -123,11 +122,11 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 			var _loadData = function(fnSuccess, fnError) {
 				this._ajax({
-					url: sServiceUrl,
+					url: sMiiQueryServiceUrl,
 					async: bAsync,
 					dataType: 'json',
 					cache: bCache,
-					data: oMiiQueryTemplateParams,
+					data: oMiiQueryParameters,
 					type: sType,
 					success: fnSuccess,
 					error: fnError
