@@ -93,6 +93,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 					},
 					success: true
 				});
+				return oData;
 			}.bind(this);
 			
 			// error function to return error object and fire request complete event
@@ -119,6 +120,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 					errorobject: oError
 				});
 				this.fireRequestFailed(oError);
+				return oError;
 			}.bind(this);
 
 			var _loadData = function(fnSuccess, fnError) {
@@ -155,7 +157,9 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 				});
 
-				return pImportCompleted.then(fnSuccess, fnError);
+				return pImportCompleted.then(fnSuccess, fnError).catch(function() {
+					jQuery.sap.log.fatal("Fatal Error. Debug me plz.", JSON.stringify(), this.toString());
+				});
 
 			} else {
 				_loadData(fnSuccess, fnError);
