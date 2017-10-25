@@ -70,12 +70,12 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 				bMerge = (bMerge === true), // true if true, false in all other cases
 				sType = sType === "POST" ? sType : "GET", // only allow GET (defaut) and POST
 				bCache = (bCache === true), // true if true, false in all other cases
-				pImportCompleted,
+				pDataLoaded, // Promise for async calls
 				sMiiQueryServiceUrl = sUrl,
 				oMiiQueryParameters;
 
 			oMiiQueryParameters = this.buildIllumParamList(oParameters);
-			
+
 			// success function to set data to the model and fire request complete event
 			var fnSuccess = function(oData) {
 				if (!oData) {
@@ -93,9 +93,10 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 					},
 					success: true
 				});
-				return oData;
+				// resolving a new promise
+				return Promise.resolve(oData);
 			}.bind(this);
-			
+
 			// error function to return error object and fire request complete event
 			var fnError = function(oParams) {
 				var oError = {
@@ -120,7 +121,8 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 					errorobject: oError
 				});
 				this.fireRequestFailed(oError);
-				return oError;
+				// rejecting a new promise
+				return Promise.reject(oError);
 			}.bind(this);
 
 			var _loadData = function(fnSuccess, fnError) {
@@ -137,29 +139,33 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 			}.bind(this);
 
 			if (bAsync) {
-				pImportCompleted = new Promise(function(resolve, reject) {
+				pDataLoaded = new Promise(function(resolve, reject) {
 
+					// reject promise if data could not be loaded. This fn is called, when _ajax fails (by fnError)
+					// It contains the default return parameters of the ajax call
 					var fnReject = function(oXMLHttpRequest, sTextStatus, oError) {
 						var oReject = {
 							request: oXMLHttpRequest,
 							textStatus: sTextStatus,
 							error: oError
 						};
-						jQuery.sap.log.error("Error on ajax call: ", JSON.stringify(oReject), this.toString());
+						// reject this promise to call fnError
 						reject(oReject);
 					};
-					
-					var fnResolve = function(oData){
-						resolve(oData);	
-					};
 
+					// resolve promise if data was 
+					var fnResolve = function(oData) {
+						// resolve this promise to call fnSuccess
+						resolve(oData);
+					};
+					
+					// start loading data and pass local fn referances to be called error/success
 					_loadData(fnResolve, fnReject);
 
 				});
-
-				return pImportCompleted.then(fnSuccess, fnError).catch(function() {
-					jQuery.sap.log.fatal("Fatal Error. Debug me plz.", JSON.stringify(), this.toString());
-				});
+				
+				//always settle pDataLoaded and return a new promise
+				return pDataLoaded.then(fnSuccess, fnError);
 
 			} else {
 				_loadData(fnSuccess, fnError);

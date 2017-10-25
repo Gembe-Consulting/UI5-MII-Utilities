@@ -46,8 +46,17 @@
 					"EndDate":"end date"
 				};
 				
-				var oModel = new QueryTemplateModel("XYZ/foo/bar/Query", oParams);
-				oModel.loadMiiData();
+				var oModel = new QueryTemplateModel();
+				var oPromise = oModel.loadData("XYZ/foo/bar/Query", oParams);
+				oPromise.then(
+					function(d){
+						debugger;
+					},
+					function(o){
+						debugger;
+					}).catch(function(e){
+						debugger;
+					});
 				});
 			});
 
