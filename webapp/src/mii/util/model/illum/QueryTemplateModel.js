@@ -75,7 +75,8 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 				oMiiQueryParameters;
 
 			oMiiQueryParameters = this.buildIllumParamList(oParameters);
-
+			
+			// success function to set data to the model and fire request complete event
 			var fnSuccess = function(oData) {
 				if (!oData) {
 					jQuery.sap.log.fatal("The following problem occurred: No data was retrieved by MII service: " + sMiiQueryServiceUrl);
@@ -93,10 +94,11 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 					success: true
 				});
 			}.bind(this);
-
+			
+			// error function to return error object and fire request complete event
 			var fnError = function(oParams) {
 				var oError = {
-					message: oParams.textStatus || oParams.statusText,
+					message: oParams.textStatus || oParams.statusText || "",
 					statusCode: oParams.request ? oParams.request.status : oParams.status,
 					statusText: oParams.request ? oParams.request.statusText : oParams.statusText,
 					responseText: oParams.request ? oParams.request.responseText : oParams.responseText
@@ -134,19 +136,26 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 			if (bAsync) {
 				pImportCompleted = new Promise(function(resolve, reject) {
+
 					var fnReject = function(oXMLHttpRequest, sTextStatus, oError) {
-						reject({
+						var oReject = {
 							request: oXMLHttpRequest,
 							textStatus: sTextStatus,
 							error: oError
-						});
+						};
+						jQuery.sap.log.error("Error on ajax call: ", JSON.stringify(oReject), this.toString());
+						reject(oReject);
 					};
-					_loadData(resolve, fnReject);
+					
+					var fnResolve = function(oData){
+						resolve(oData);	
+					};
+
+					_loadData(fnResolve, fnReject);
+
 				});
 
-				return pImportCompleted.then(fnSuccess, fnError).catch(function() {
-					alert("Fatal Error. Debug me plz.");
-				});
+				return pImportCompleted.then(fnSuccess, fnError);
 
 			} else {
 				_loadData(fnSuccess, fnError);
