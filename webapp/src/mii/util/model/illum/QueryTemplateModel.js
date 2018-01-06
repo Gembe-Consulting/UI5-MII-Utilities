@@ -173,6 +173,24 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 		};
 
+		/**
+		 * Builds a MII Illuminator compliant parameter list like:
+		 * Param.1
+		 * Param.2
+		 * ....
+		 * Param.32
+		 * 
+		 * oMiiQueryTemplateParams can be a object like
+		 * {
+		 	"Param.1": value1,
+		 	"Param.2": value2,
+		 	....
+		 	"Param.32": value32
+		 * }
+		 * or can be a array like
+		 * [value1, value2, ... value32]
+		 * Such an array will be converted into an object as above
+		 */
 		QueryTemplateModel.prototype.buildIllumParamList = function(oMiiQueryTemplateParams) {
 
 			// hier werden wir notwendige mappings durchführen
@@ -182,14 +200,17 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 			return oMiiQueryTemplateParams;
 
 		};
+		
+		/**
+		 * Constrains to consider:
+		 * - 32 Parameters max
+		 * - Gaps allowed
+		 * - Duplications forbidden
+		 * - Exact wording
+		 */
 		QueryTemplateModel.prototype._validateMiiParameters = function(oMiiQueryTemplateParams) {
 			// hier werdn wir die Params gegen ein Schema vergleichen
 			return true;
-		};
-
-		QueryTemplateModel.prototype.getIllumServiceUrl = function(sIllumServiceName) {
-			sIllumServiceName = sIllumServiceName || "QueryTemplate";
-			return this._sBaseUrl + sIllumServiceName;
 		};
 
 		return QueryTemplateModel;

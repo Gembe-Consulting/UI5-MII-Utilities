@@ -13,22 +13,21 @@ sap.ui.define(["jquery.sap.global", "mii/util/library", "sap/ui/base/ManagedObje
 			properties: {
 				"rowId": {
 					type: "int",
-					defaultValue: 0,
-					bindable: false
+					defaultValue: 0
 				}
 			},
 			defaultProperty: "rowId",
 			aggregations: {
-				"attributes": {
-					type: "any",
+				"dataItems": {
+					type: "mii.util.type.illuminator.DataItem",
 					multiple: true,
-					singularName: "attribute"
+					singularName: "dataItem"
 				}
 			},
 			defaultAggregation: "properties",
 			association: {
 				"columnRef": {
-					type: "mii.util.type.illuminator.Colmn",
+					type: "mii.util.type.illuminator.Column",
 					multiple: false
 				}
 			}

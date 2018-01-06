@@ -1,13 +1,13 @@
 /**
- * MII Illuminator Class - Row
+ * MII Illuminator Class - DataItem
  * https://openui5.hana.ondemand.com/#/api/sap.ui.base.ManagedObject/methods/sap.ui.base.ManagedObject.extend
  */
 
-// Provides an implementation of a Row in MII Illuminator concept
+// Provides an implementation of a DataItem in MII Illuminator concept
 sap.ui.define(["jquery.sap.global", "mii/util/library", "sap/ui/base/ManagedObject"], function(jQuery, library, ManagedObject) {
 	"use strict";
 
-	var Row = ManagedObject.extend("mii.util.type.illuminator.Row", /** @lends basic.model.mii.type.illuminator.Row.prototype */ {
+	var DataItem = ManagedObject.extend("mii.util.type.illuminator.DataItem", /** @lends basic.model.mii.type.illuminator.DataItem.prototype */ {
 		metadata: {
 			library: "mii.util",
 			properties: {
@@ -38,6 +38,6 @@ sap.ui.define(["jquery.sap.global", "mii/util/library", "sap/ui/base/ManagedObje
 		}
 	});
 
-	return Row;
+	return DataItem;
 
 }, /*bExport=*/ true);

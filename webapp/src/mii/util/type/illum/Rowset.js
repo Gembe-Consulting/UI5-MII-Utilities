@@ -14,8 +14,7 @@ sap.ui.define(["jquery.sap.global", "mii/util/library", "sap/ui/base/ManagedObje
 			properties: {
 				"rowsetId": {
 					type: "int",
-					defaultValue: 0,
-					bindable: false
+					defaultValue: 0
 				},
 				"queryTemplate": {
 					type: "string"
