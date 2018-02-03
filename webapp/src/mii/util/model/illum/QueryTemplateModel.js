@@ -27,6 +27,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 
 				if (oParameters) {
 					this.bPreventInitialLoad = oParameters.preventInitialLoad || false; //true, false, null (if it was true)
+					this.bPreventParameterlessLoad = oParameters.preventParameterlessLoad || false;
 				}
 
 				if (typeof oData == "string") {
@@ -54,7 +55,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 				return;
 			};
 
-			if (!sUrl || !oParameters) {
+			if (!sUrl || (!oParameters && this.bPreventParameterlessLoad)) {
 				jQuery.sap.log.warning("Method loadData() is missing either sUrl or oParameters. Data not loaded.", null, this.toString());
 
 				return;
@@ -158,12 +159,12 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 						// resolve this promise to call fnSuccess
 						resolve(oData);
 					};
-					
+
 					// start loading data and pass local fn referances to be called error/success
 					_loadData(fnResolve, fnReject);
 
 				});
-				
+
 				//always settle pDataLoaded and return a new promise
 				return pDataLoaded.then(fnSuccess, fnError);
 
@@ -200,7 +201,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/lib
 			return oMiiQueryTemplateParams;
 
 		};
-		
+
 		/**
 		 * Constrains to consider:
 		 * - 32 Parameters max
