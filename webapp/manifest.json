@@ -29,11 +29,7 @@
 			"cozy": true
 		},
 		"resources": {
-			"js": [{
-				"uri": "libs/validatejs/validate.js",
-				"name": "validate.js",
-				"version": "0.12.0"
-			}],
+			"js": [],
 			"css": []
 		}
 	}

@@ -11,13 +11,9 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 		dependencies: [
 			"sap.ui.core"
 		],
-		types: [
-			"mii.util.QueryTemplateType"
-		],
+		types: [],
 		interfaces: [],
-		controls: [
-			"mii.util.type.Rowset"
-			],
+		controls: [],
 		elements: [
 			"mii.util.model.illum.QueryTemplateModel"
 		],

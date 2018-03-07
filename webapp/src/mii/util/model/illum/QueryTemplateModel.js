@@ -3,8 +3,8 @@
  */
 
 // Provides the JSON object based model implementation
-sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "mii/util/libs/validatejs/validate"],
-	function(jQuery, JSONModel, validate) {
+sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
+	function(jQuery, JSONModel) {
 		"use strict";
 
 		/**
