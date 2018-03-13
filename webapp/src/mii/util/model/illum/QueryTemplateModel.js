@@ -30,7 +30,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 					this.bPreventParameterlessLoad = oParameters.preventParameterlessLoad || false;
 				}
 
-				if (typeof oData == "string") {
+				if (typeof oData === "string") {
 					this._sServiceUrl = oData;
 				}
 
@@ -52,20 +52,19 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 
 			if (this.bPreventInitialLoad) {
 				this.bPreventInitialLoad = null;
-				return;
-			};
+				return Promise.reject(new Error(
+					"Method loadData() does not allow loading this time and is preventing initial load (e.g. during app initialization)."));
+			}
 
 			if (!sUrl || (!oParameters && this.bPreventParameterlessLoad)) {
-				jQuery.sap.log.warning("Method loadData() is missing either sUrl or oParameters. Data not loaded.", null, this.toString());
-
-				return;
+				return Promise.reject(new Error("Method loadData() is missing either sUrl or oParameters (while preventing parameterless load)."));
 			}
-			return this.loadMiiData(sUrl, oParameters, bAsync, sType, bMerge, bCache);
-			//JSONModel.prototype.loadData.apply(this, [sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders]);
+
+			return this.loadMiiData(sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders);
 
 		};
 
-		QueryTemplateModel.prototype.loadMiiData = function(sUrl, oParameters, bAsync, sType, bMerge, bCache) {
+		QueryTemplateModel.prototype.loadMiiData = function(sUrl, oParameters, bAsync, sType, bMerge, bCache, mHeaders) {
 
 			var bAsync = (bAsync !== false), // false if flase, true in all other cases (null, undefined, 1, "X", ...)
 				bMerge = (bMerge === true), // true if true, false in all other cases
@@ -126,7 +125,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 				return Promise.reject(oError);
 			}.bind(this);
 
-			var _loadData = function(fnSuccess, fnError) {
+			var _loadData = function(onSuccess, onError) {
 				this._ajax({
 					url: sMiiQueryServiceUrl,
 					async: bAsync,
@@ -134,8 +133,8 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 					cache: bCache,
 					data: oMiiQueryParameters,
 					type: sType,
-					success: fnSuccess,
-					error: fnError
+					success: onSuccess,
+					error: onError
 				});
 			}.bind(this);
 
