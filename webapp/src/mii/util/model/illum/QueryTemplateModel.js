@@ -81,6 +81,19 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 				if (!oData) {
 					jQuery.sap.log.fatal("The following problem occurred: No data was retrieved by MII service: " + sMiiQueryServiceUrl);
 				}
+
+				try {
+					debugger;
+					oData.success = !this.hasError(oData);
+					oData.errorText = this.getError(oData);
+					oData.messages = this.getMessages(oData);
+
+					oData.rowsets = this._compressRows(oData);
+					//oData.rows = this.hasRowsAtRowsetIndex();
+				} catch (err) {
+					return Promise.reject(new Error(err));
+				}
+
 				this.setData(oData, bMerge);
 				this.fireRequestCompleted({
 					url: sMiiQueryServiceUrl,
@@ -199,6 +212,56 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 
 			return oMiiQueryTemplateParams;
 
+		};
+
+		QueryTemplateModel.prototype.hasError = function(oIllumData) {
+			oIllumData = oIllumData || this.getData();
+			return oIllumData && !!oIllumData.d.results["0"].FatalError;
+		};
+
+		QueryTemplateModel.prototype.getError = function(oIllumData) {
+			oIllumData = oIllumData || this.getData();
+			return oIllumData && oIllumData.d.results["0"].FatalError;
+		};
+
+		QueryTemplateModel.prototype.hasMessages = function(oIllumData) {
+			oIllumData = oIllumData || this.getData();
+			return oIllumData && oIllumData.d.results["0"].Messages.results.length > 0;
+		};
+		QueryTemplateModel.prototype.getMessages = function(oIllumData) {
+			oIllumData = oIllumData || this.getData();
+			return oIllumData && oIllumData.d.results["0"].Messages.results;
+		};
+
+		QueryTemplateModel.prototype.hasRowsAtRowsetIndex = function(oIllumData, iRowset) {
+			var bOk = true;
+			oIllumData = oIllumData || this.getData();
+			iRowset = iRowset || 0;
+
+			//Illum has at least given Rowset Index?
+			bOk = bOk && oIllumData && oIllumData.d.results["0"].Rowset.results.length >= iRowset;
+
+			//Illum Rowset has an Row Results array at given Rowset Index?
+			bOk = bOk && oIllumData && oIllumData.d.results["0"].Rowset.results[iRowset].Row.results;
+
+			//Illum Row Results array has at least one element
+			bOk = bOk && oIllumData && oIllumData.d.results["0"].Rowset.results[iRowset].Row.results.length > 0;
+
+			return bOk;
+		};
+
+		QueryTemplateModel.prototype.getRowsAtRowsetIndex = function(oIllumData, iRowset) {
+			oIllumData = oIllumData || this.getData();
+			iRowset = iRowset || 0;
+			return oIllumData && oIllumData.d.results["0"].Rowset.results[iRowset].Row.results;
+		};
+
+		QueryTemplateModel.prototype._compressRows = function(oIllumData) {
+			oIllumData = oIllumData || this.getData();
+
+			return oIllumData.d.results["0"].Rowset.results.map(function(rowset) {
+				return rowset.Row.results;
+			});
 		};
 
 		/**
