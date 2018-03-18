@@ -99,7 +99,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 					//lets go dirty and check success, if we have a fatal error, we reject a Promise -> caller will be informed
 					if (!oData.success) {
 						oData.lastErrorMessage = this.getError(oData);
-						oError = new Error(oData.lastErrorMessage);
+						oError = new Error(oData.lastErrorMessage || "Fatal Error within MII transaction!");
 					}
 
 					if (this.bCheckReturnRequired) {
@@ -117,42 +117,26 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 
 				}
 
+				// Note: we still fire RequestCompleted with success=true, because the call was technically correct
+				this.fireRequestCompleted({
+					url: sMiiQueryServiceUrl,
+					type: sType,
+					async: bAsync,
+					info: "cache=" + bCache + ";bMerge=" + bMerge,
+					infoObject: {
+						cache: bCache,
+						merge: bMerge
+					},
+					success: true
+				});
+
 				if (!oError) {
 					this.setData(oData, bMerge);
-
-					this.fireRequestCompleted({
-						url: sMiiQueryServiceUrl,
-						type: sType,
-						async: bAsync,
-						info: "cache=" + bCache + ";bMerge=" + bMerge,
-						infoObject: {
-							cache: bCache,
-							merge: bMerge
-						},
-						success: true
-					});
-
 					// resolving a new promise
 					return Promise.resolve(oData);
-
 				} else {
-					this.fireRequestCompleted({
-						url: sMiiQueryServiceUrl,
-						type: sType,
-						async: bAsync,
-						info: "cache=" + bCache + ";bMerge=" + bMerge,
-						infoObject: {
-							cache: bCache,
-							merge: bMerge
-						},
-						success: false,
-						errorobject: oError
-					});
-					this.fireRequestFailed(oError);
-
 					// rejecting a new promise
 					return Promise.reject(oError);
-
 				}
 			}.bind(this);
 
