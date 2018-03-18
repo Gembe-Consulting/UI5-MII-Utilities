@@ -12,7 +12,8 @@
 			data-sap-ui-libs="mii.util"
 			data-sap-ui-theme="sap_bluecrystal"
 			data-sap-ui-resourceroots='{
-				"mii.util": "/webapp/src/mii/util"
+				"mii.util": "../../../src/mii/util",
+				"test": "./"
 			}'>
 	</script>
 
@@ -47,11 +48,13 @@
 				};
 				
 				var oModel = new QueryTemplateModel();
-				var oPromise = oModel.loadData("XYZ/foo/bar/Query", oParams);
+				
+				var oPromise = oModel.loadMiiData(jQuery.sap.getResourcePath("test/data/EmptyRowset", ".json"), oParams);
+				
 				oPromise.then(
 					function(d){
 						debugger;
-					},
+					}.bind(oModel),
 					function(o){
 						debugger;
 					}).catch(function(e){

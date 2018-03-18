@@ -28,6 +28,8 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 				if (oParameters) {
 					this.bPreventInitialLoad = oParameters.preventInitialLoad || false; //true, false, null (if it was true)
 					this.bPreventParameterlessLoad = oParameters.preventParameterlessLoad || false;
+					this.bCheckReturnRequired = oParameters.checkReturnRequired || false;
+					this.aRequiredRowsets = oParameters.requiredRowsets || [0];
 				}
 
 				if (typeof oData === "string") {
@@ -78,36 +80,80 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 
 			// success function to set data to the model and fire request complete event
 			var fnSuccess = function(oData) {
+				var oError,
+					iErrorIndex, bPassed;
+
 				if (!oData) {
-					jQuery.sap.log.fatal("The following problem occurred: No data was retrieved by MII service: " + sMiiQueryServiceUrl);
+					jQuery.sap.log.fatal("The following problem occurred: No data was retrieved by MII service '" + sMiiQueryServiceUrl + "'");
+					oError = new Error("No data was retrieved by MII service '" + sMiiQueryServiceUrl + "'");
+				} else {
+
+					try {
+						oData.success = !this.hasError(oData);
+						oData.messages = this._compressMessages(oData);
+						oData.rowsets = this._compressRows(oData);
+					} catch (err) {
+						oError = new Error(err);
+					}
+
+					//lets go dirty and check success, if we have a fatal error, we reject a Promise -> caller will be informed
+					if (!oData.success) {
+						oData.lastErrorMessage = this.getError(oData);
+						oError = new Error(oData.lastErrorMessage);
+					}
+
+					if (this.bCheckReturnRequired) {
+						iErrorIndex;
+
+						bPassed = this.aRequiredRowsets.every(function(rowsetIndex) {
+							iErrorIndex = rowsetIndex;
+							return oData.rowsets[rowsetIndex] && oData.rowsets[rowsetIndex].length > 0;
+						});
+
+						if (!bPassed) {
+							oError = new Error("Rowset [" + iErrorIndex + "] is marked as mandatory, but no Rows has been returned!");
+						}
+					}
+
 				}
 
-				try {
-					debugger;
-					oData.success = !this.hasError(oData);
-					oData.errorText = this.getError(oData);
-					oData.messages = this.getMessages(oData);
+				if (!oError) {
+					this.setData(oData, bMerge);
 
-					oData.rowsets = this._compressRows(oData);
-					//oData.rows = this.hasRowsAtRowsetIndex();
-				} catch (err) {
-					return Promise.reject(new Error(err));
+					this.fireRequestCompleted({
+						url: sMiiQueryServiceUrl,
+						type: sType,
+						async: bAsync,
+						info: "cache=" + bCache + ";bMerge=" + bMerge,
+						infoObject: {
+							cache: bCache,
+							merge: bMerge
+						},
+						success: true
+					});
+
+					// resolving a new promise
+					return Promise.resolve(oData);
+
+				} else {
+					this.fireRequestCompleted({
+						url: sMiiQueryServiceUrl,
+						type: sType,
+						async: bAsync,
+						info: "cache=" + bCache + ";bMerge=" + bMerge,
+						infoObject: {
+							cache: bCache,
+							merge: bMerge
+						},
+						success: false,
+						errorobject: oError
+					});
+					this.fireRequestFailed(oError);
+
+					// rejecting a new promise
+					return Promise.reject(oError);
+
 				}
-
-				this.setData(oData, bMerge);
-				this.fireRequestCompleted({
-					url: sMiiQueryServiceUrl,
-					type: sType,
-					async: bAsync,
-					info: "cache=" + bCache + ";bMerge=" + bMerge,
-					infoObject: {
-						cache: bCache,
-						merge: bMerge
-					},
-					success: true
-				});
-				// resolving a new promise
-				return Promise.resolve(oData);
 			}.bind(this);
 
 			// error function to return error object and fire request complete event
@@ -224,24 +270,18 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 			return oIllumData && oIllumData.d.results["0"].FatalError;
 		};
 
-		QueryTemplateModel.prototype.hasMessages = function(oIllumData) {
-			oIllumData = oIllumData || this.getData();
-			return oIllumData && oIllumData.d.results["0"].Messages.results.length > 0;
-		};
-		QueryTemplateModel.prototype.getMessages = function(oIllumData) {
-			oIllumData = oIllumData || this.getData();
-			return oIllumData && oIllumData.d.results["0"].Messages.results;
-		};
-
 		QueryTemplateModel.prototype.hasRowsAtRowsetIndex = function(oIllumData, iRowset) {
 			var bOk = true;
 			oIllumData = oIllumData || this.getData();
 			iRowset = iRowset || 0;
 
-			//Illum has at least given Rowset Index?
-			bOk = bOk && oIllumData && oIllumData.d.results["0"].Rowset.results.length >= iRowset;
+			//Illum has an array at given Rowset Index?
+			bOk = bOk && oIllumData && oIllumData.d.results["0"].Rowset.results[iRowset];
 
-			//Illum Rowset has an Row Results array at given Rowset Index?
+			//Illum Rowset has an Row Object at given Rowset Index?
+			bOk = bOk && oIllumData && oIllumData.d.results["0"].Rowset.results[iRowset].Row;
+
+			//Illum Row Object has a Results array at given Rowset Index?
 			bOk = bOk && oIllumData && oIllumData.d.results["0"].Rowset.results[iRowset].Row.results;
 
 			//Illum Row Results array has at least one element
@@ -253,14 +293,43 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 		QueryTemplateModel.prototype.getRowsAtRowsetIndex = function(oIllumData, iRowset) {
 			oIllumData = oIllumData || this.getData();
 			iRowset = iRowset || 0;
-			return oIllumData && oIllumData.d.results["0"].Rowset.results[iRowset].Row.results;
+
+			if (this.hasRowsAtRowsetIndex(oIllumData, iRowset)) {
+				return oIllumData.d.results["0"].Rowset.results[iRowset].Row.results;
+			}
+
+			return;
 		};
 
 		QueryTemplateModel.prototype._compressRows = function(oIllumData) {
 			oIllumData = oIllumData || this.getData();
 
 			return oIllumData.d.results["0"].Rowset.results.map(function(rowset) {
-				return rowset.Row.results;
+				return this._removeMetadata(rowset.Row.results);
+			}.bind(this));
+		};
+
+		QueryTemplateModel.prototype._removeMetadata = function(vData) {
+
+			var deleteMetadata = function(obj) {
+				delete obj.__metadata;
+				return obj;
+			};
+
+			if (Array.isArray(vData)) {
+				return vData.map(function(obj) {
+					return deleteMetadata(obj);
+				});
+			}
+
+			return deleteMetadata(vData);
+		};
+
+		QueryTemplateModel.prototype._compressMessages = function(oIllumData) {
+			oIllumData = oIllumData || this.getData();
+
+			return oIllumData.d.results["0"].Messages.results.map(function(rowset) {
+				return rowset.Message;
 			});
 		};
 
