@@ -3,8 +3,8 @@
  */
 
 // Provides the JSON object based model implementation
-sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
-	function(jQuery, JSONModel) {
+sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessageParser"],
+	function(jQuery, JSONModel, MIIMessageParser) {
 		"use strict";
 
 		/**
@@ -24,6 +24,11 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 		 */
 		var QueryTemplateModel = JSONModel.extend("mii.util.model.illum.QueryTemplateModel", /** @lends mii.util.model.illum.QueryTemplateModel.prototype */ {
 			constructor: function(oData, oParameters) {
+				JSONModel.prototype.constructor.apply(this, arguments);
+
+				// Instantiate MIIMessageParser
+				this._oMessageParser = new MIIMessageParser();
+				this._oMessageParser.setProcessor(this);
 
 				if (oParameters) {
 					this.bPreventInitialLoad = oParameters.preventInitialLoad || false; //true, false, null (if it was true)
@@ -35,8 +40,6 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 				if (typeof oData === "string") {
 					this._sServiceUrl = oData;
 				}
-
-				JSONModel.apply(this, arguments);
 
 			}
 		});
@@ -95,6 +98,9 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel"],
 					} catch (err) {
 						oError = new Error(err);
 					}
+
+					// Pass the response to the MessageParser, and then update the model's data
+					this._oMessageParser.parse(oData);
 
 					//lets go dirty and check success, if we have a fatal error, we reject a Promise -> caller will be informed
 					if (!oData.success) {

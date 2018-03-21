@@ -15,7 +15,8 @@ sap.ui.define(["sap/ui/core/library"], /* library dependency */ function() {
 		interfaces: [],
 		controls: [],
 		elements: [
-			"mii.util.model.illum.QueryTemplateModel"
+			"mii.util.model.illum.QueryTemplateModel",
+			"mii.util.model.illum.MIIMessageParser"
 		],
 		noLibraryCSS: true
 	});
