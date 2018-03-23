@@ -13,7 +13,7 @@ sap.ui.define([
 		 */
 		parse: function(oResponse) {
 			var mMessageTypes, aNewMessages, oMessageProcessor;
-			debugger;
+
 			// Supported message types
 			mMessageTypes = {
 				INFO: sap.ui.core.MessageType.Information,

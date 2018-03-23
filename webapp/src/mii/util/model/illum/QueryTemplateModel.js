@@ -24,8 +24,6 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 		 */
 		var QueryTemplateModel = JSONModel.extend("mii.util.model.illum.QueryTemplateModel", /** @lends mii.util.model.illum.QueryTemplateModel.prototype */ {
 			constructor: function(oData, oParameters) {
-				JSONModel.prototype.constructor.apply(this, arguments);
-
 				// Instantiate MIIMessageParser
 				this._oMessageParser = new MIIMessageParser();
 				this._oMessageParser.setProcessor(this);
@@ -33,6 +31,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 				if (oParameters) {
 					this.bPreventInitialLoad = oParameters.preventInitialLoad || false; //true, false, null (if it was true)
 					this.bPreventParameterlessLoad = oParameters.preventParameterlessLoad || false;
+					this.bIgnoreFatalError = oParameters.ignoreFatalError || false;
 					this.bCheckReturnRequired = oParameters.checkReturnRequired || false;
 					this.aRequiredRowsets = oParameters.requiredRowsets || [0];
 				}
@@ -41,6 +40,8 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 					this._sServiceUrl = oData;
 				}
 
+				// Dont move this away from here -> else JSONModel.constructor would call loadData
+				JSONModel.prototype.constructor.apply(this, arguments);
 			}
 		});
 
@@ -93,6 +94,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 
 					try {
 						oData.success = !this.hasError(oData);
+						oData.lastErrorMessage = this.getError(oData);
 						oData.messages = this._compressMessages(oData);
 						oData.rowsets = this._compressRows(oData);
 					} catch (err) {
@@ -103,8 +105,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 					this._oMessageParser.parse(oData);
 
 					//lets go dirty and check success, if we have a fatal error, we reject a Promise -> caller will be informed
-					if (!oData.success) {
-						oData.lastErrorMessage = this.getError(oData);
+					if (!oData.success && !this.bIgnoreFatalError) {
 						oError = new Error(oData.lastErrorMessage || "Fatal Error within MII transaction!");
 					}
 
