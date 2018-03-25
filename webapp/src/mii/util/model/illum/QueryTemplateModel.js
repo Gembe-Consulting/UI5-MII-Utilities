@@ -294,9 +294,16 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 		QueryTemplateModel.prototype._compressRows = function(oIllumData) {
 			oIllumData = oIllumData || this.getData();
 
-			return oIllumData.d.results["0"].Rowset.results.map(function(rowset) {
-				return this._removeMetadata(rowset.Row.results);
-			}.bind(this));
+			if (oIllumData.d.results["0"].Rowset && oIllumData.d.results["0"].Rowset.results) {
+				return oIllumData.d.results["0"].Rowset.results.map(function(rowset) {
+					if (rowset.Row && rowset.Row.results) {
+						return this._removeMetadata(rowset.Row.results);
+					}
+					return [];
+				}.bind(this));
+			}
+
+			return [];
 		};
 
 		QueryTemplateModel.prototype._removeMetadata = function(vData) {
@@ -318,9 +325,12 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 		QueryTemplateModel.prototype._compressMessages = function(oIllumData) {
 			oIllumData = oIllumData || this.getData();
 
-			return oIllumData.d.results["0"].Messages.results.map(function(rowset) {
-				return rowset.Message;
-			});
+			if (oIllumData.d.results["0"].Messages && oIllumData.d.results["0"].Messages.results) {
+				return oIllumData.d.results["0"].Messages.results.map(function(rowset) {
+					return rowset.Message;
+				});
+			}
+			return [];
 		};
 
 		/**
