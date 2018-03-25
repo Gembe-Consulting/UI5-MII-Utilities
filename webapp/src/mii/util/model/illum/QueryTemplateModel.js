@@ -96,7 +96,6 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 						oData.success = !this.hasError(oData);
 						oData.lastErrorMessage = this.getError(oData);
 						oData.messages = this._compressMessages(oData);
-						oData.rowsets = this._compressRows(oData);
 					} catch (err) {
 						oError = new Error(err);
 					}
