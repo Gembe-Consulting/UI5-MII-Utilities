@@ -58,8 +58,7 @@ sap.ui.define(["jquery.sap.global", "sap/ui/model/json/JSONModel", "./MIIMessage
 
 			if (this.bPreventInitialLoad) {
 				this.bPreventInitialLoad = null;
-				return Promise.reject(new Error(
-					"Method loadData() does not allow loading this time and is preventing initial load (e.g. during app initialization)."));
+				return Promise.resolve();
 			}
 
 			if (!sUrl || (!oParameters && this.bPreventParameterlessLoad)) {
