@@ -1,0 +1,22 @@
+{
+  "name": "ui5-mii-utilities",
+  "description": "Library for SAP MII interactions",
+  "devDependencies": {
+    "qunit": "~1.16.0"
+  },
+  "keywords": [
+    "MII"
+  ],
+  "authors": [
+    "Philipp Gembe <philipp.gembe@gembe-consulting.de>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
